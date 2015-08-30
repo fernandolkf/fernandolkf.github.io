@@ -1,13 +1,13 @@
 # Site settings
 
-url: "http://panossakkos.github.io"
-title: "{ Panos Sakkos }"
-description: "Blog and website of Panos Sakkos, blogging mainly for tech. Opinions expressed are mine."
-keywords: "panos, sakkos, panos sakkos, technology, computer science, Pwn Mail, WriteRight, UoA, di, CERN, MDCN, Microsoft"
+url: "http://fernandolkf.github.io"
+title: "{Fernando de Lucca Siqueira}"
+description: "Personal blog and website of Fernando de Lucca Siqueira."
+keywords: "fernandolkf, fernando, de lucca, siqueira, computer science, moving objects trajectory, mobile robots, gaming, fenixdown"
 favicon: "/img/favicon.ico"
 black-favicon: "/img/black-lab-glass.ico"
-google-tracking-id: "UA-35880426-3"
-disqus-shortname: "panossakkos"
+google-tracking-id: "UA-66906058-1"
+disqus-shortname: "fernandodeluccasiqueira"
 
 # Navigation bar links
 # Blog link in the blog and post pages will point to the blog.html#blog
@@ -15,11 +15,11 @@ disqus-shortname: "panossakkos"
 
 pages_list:
   About: 'about'
-  Blog: 'blog'
   Career: 'career'
+  Blog: 'blog'
   Contact: 'contact'
 
-background-img: "/img/intro-bg.jpg"
+background-img: "/img/intro-bg.png"
 
 # About variables
 
@@ -39,24 +39,24 @@ reddit-share: True
 # Career variables
 
 events:
-  - image: "/img/career/microsoft.jpg"
-    date: "September 2014 - Today"
-    description: "Software Engineer @ Microsoft Development Center Norway, working @ the <a href=\"http://dev.office.com/officegraph\" target=\"_blank\"> Office Graph</a>"
-  - image: "/img/career/uoa.jpg"
-    date: "October 2012 - August 2014"
-    description: "Master studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Software Engineering + <a href=\"http://scholar.google.com/citations?user=UtV6LFYAAAAJ&amp;hl=en&amp;oi=ao\" target=\"_blank\">Machine Learning researcher</a> @ <a href=\"http://kddlab.di.uoa.gr\" target=\"_blank\">KDD</a> lab"
-  - image: "/img/career/cern.jpg"
-    date: "October 2011 - September 2012"
-    description: "Security researcher @ <a href=\"http://www.cern.ch\" target=\"_blank\">CERN</a>, developed linux kernel extensions to prevent cyber attacks"
-  - image: "/img/career/writeright.jpg"
-    date: "August 2011 - Today"
-    description: "Released <a href=\"https://play.google.com/store/apps/details?id=panos.sakkos.softkeyboard.writeright\" target=\"_blank\">WriteRight</a>, an adaptive S/W keyboard for Android devices, which  shrinks the unlikely keys to tap next. Currently it holds &gt; 9,000 downloads"
-  - image: "/img/career/pwnmail.jpg"
-    date: "June 2010 - November 2010"
-    description: "Released <a href=\"https://www.google.com/search?q=pwn+mail\" target=\"_blank\">Pwn Mail</a>, an iPhone app for spoofing emails. It served &gt; 260,000 emails but it was discontinued after a legal threat by <strike>Steve Jobs</strike> a secretary of Steve Jobs"
-  - image: "/img/career/uoa.jpg"
-    date: "October 2007 - September 2011"
-    description: "Bachelor studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Computer Science and Telecomunications"
+  - image: "/img/career/logo_cnr.png"
+    date: "February 2013 - April 2013"
+    description: "Visitor researcher @ <a href=\"http://www.isti.cnr.it\" target=\"_blank\"> Consiglio Nazionale delle Ricerche</a> Pisa, Italy"
+  - image: "/img/career/logo_ufsc_pgeas.png"
+    date: "March 2012 - Today"
+    description: "PhD degree on Systems Engineering and Automation @ <a href=\"http://pgeas.ufsc.br\" target=\"_blank\"> Department of Systems Engineering and Automation,</a>  Universidade Federal de Santa Catarina"
+  - image: "/img/career/logo_ufsc_ppgcc.png"
+    date: "March 2010 - February 2012"
+    description: "Master degree on Computer Science  @ <a href=\"http://ppgcc.posgrad.ufsc.br\" target=\"_blank\">Department of Informatics and Statistics,</a> Universidade Federal de Santa Catarina"
+  - image: "/img/career/logo_paripassu.png"
+    date: "September 2009 - February 2010"
+    description: "Software developer @ <a href=\"http://http://www.paripassu.com.br\" target=\"_blank\">Paripassu</a>"  
+  - image: "/img/career/logo_ufsc_lapesd.png"
+    date: "Jan 2008 - August 2009"
+    description: "Scientific initiation @ <a href=\"http://www.lapesd.inf.ufsc.br\" target=\"_blank\">LaPeSD</a> developing the @ <a href=\"http://www.literaturabrasileira.ufsc.br\" target=\"_blank\">Digital Library of Portuguese Literature</a>"
+  - image: "/img/career/logo_ufsc_cco.png"
+    date: "August 2005 - December 2009"
+    description: "Bachelor studies @ <a href=\"http://www.cco.inf.ufsc.br\" target=\"_blank\">Universidade Federal de Santa Catarina</a> on Computer Science"
 
 # First image of the Career timeline
 career-img: "/img/career/default.jpg"
@@ -66,13 +66,12 @@ social:
   - title: "rss"
     url: "/feed.xml"
   - title: "github"
-    url: "https://github.com/PanosSakkos"
+    url: "https://github.com/fernandolkf"
   - title: "linkedin"
-    url: "http://no.linkedin.com/in/PanosSakkos"
-  - title: "youtube"
-    url: "http://youtube.com/c/PanosSakkos"
-  - title: "soundcloud"
-    url: "https://soundcloud.com/psakkos/"
+    url: "https://www.linkedin.com/pub/fernando-de-lucca-siqueira/2a/9b7/647"
+  - title: "twitter"
+    url: "http://twitter.com/fernando_x"
+
 
 404-img: "/img/labtocat.png"
 
