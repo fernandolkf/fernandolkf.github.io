@@ -53,7 +53,7 @@ events:
     description: "Software developer @ <a href=\"http://http://www.paripassu.com.br\" target=\"_blank\">Paripassu</a>"  
   - image: "/img/career/logo_ufsc_lapesd.png"
     date: "Jan 2008 - August 2009"
-    description: "Scientific initiation @ <a href=\"http://www.lapesd.inf.ufsc.br\" target=\"_blank\">LaPeSD</a> developing the @ <a href=\"http://www.literaturabrasileira.ufsc.br\" target=\"_blank\">Digital Library of Portuguese Literature</a>"
+    description: "Scientific initiation @ <a href=\"http://www.lapesd.inf.ufsc.br\" target=\"_blank\">LaPeSD</a> developing the <a href=\"http://www.literaturabrasileira.ufsc.br\" target=\"_blank\">Digital Library of Portuguese Literature</a>"
   - image: "/img/career/logo_ufsc_cco.png"
     date: "August 2005 - December 2009"
     description: "Bachelor studies @ <a href=\"http://www.cco.inf.ufsc.br\" target=\"_blank\">Universidade Federal de Santa Catarina</a> on Computer Science"
