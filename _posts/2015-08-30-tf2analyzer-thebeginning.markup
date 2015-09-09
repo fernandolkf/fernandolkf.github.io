@@ -1,0 +1,24 @@
+---
+layout: post
+section-type: post
+title: "TF2 Log Analyzer: The Beggining"
+category: projects
+tags: [ 'tf2log' ]
+---
+
+For this project I decide to go simple: java + postgresSQL + postgis. Java because it is a simple language that I'm already familiar with. Postgres is another simple SGBD that I'm also familiar and the postgis plugin provides some spatial functions that could be useful. This is the same setup as my master work.
+
+I’m not worried about performance so java is fine. It have an enormous library available online that could help in the development. I was temping to start define the classes of the project when I step on a boring issue: the log parser.
+
+The log is a txt file with thousands lines registering all the events of the match. Each different event has a different structure, so it is boring as hell to organize it. The pattern follow like this:
+
+<small>L day - timestamp: ActorOfEvent<%><%UserID%><%UserGroup%> EventDescription</small>
+
+The main problem is that the EventDescription can be something simple like the user connection or more complex like picked an item, killed an enemy or capture an objective. So the parser should handle all the possible events.
+
+<figure>
+<img src="/img/posts/logFile.png" align="center" style="max-width:100%;">
+<figcaption>Fig 1. Example of a log file.</figcaption>
+</figure>
+
+All events have a temporal attribute, but only a few has a spatial attribute. Kills, deaths, damage and construction building have a position. At first we can ignore all data without a position, but we lost several interesting information like the player class, the teams, etc. I will work on this latter.
