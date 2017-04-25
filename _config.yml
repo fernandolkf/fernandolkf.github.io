@@ -39,11 +39,14 @@ reddit-share: True
 # Career variables
 
 events:
+  - image: "/img/career/logo_ufsc_pgeas.png"
+    date: "September 2015 - July 2016"
+    description: "Substitute Teacher @ <a href=\"http://www.ufsc.br\" target=\"_blank\">Department of Systems Engineering and Automation</a>, Universidade Federal de Santa Catarina"
   - image: "/img/career/logo_cnr.png"
     date: "February 2013 - April 2013"
     description: "Visitor researcher @ <a href=\"http://www.isti.cnr.it\" target=\"_blank\"> Consiglio Nazionale delle Ricerche</a> Pisa, Italy"
   - image: "/img/career/logo_ufsc_pgeas.png"
-    date: "March 2012 - Today"
+    date: "March 2012 - March 2017"
     description: "PhD degree on Systems Engineering and Automation @ <a href=\"http://pgeas.ufsc.br\" target=\"_blank\"> Department of Systems Engineering and Automation,</a>  Universidade Federal de Santa Catarina"
   - image: "/img/career/logo_ufsc_ppgcc.png"
     date: "March 2010 - February 2012"
