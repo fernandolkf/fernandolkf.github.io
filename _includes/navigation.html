@@ -25,9 +25,6 @@
 
                   <!-- Scroll to section for each page in index -->
                   {% for p in site.pages_list %}
-                    <li>
-                      <a class="page-scroll" href="#{{ p[1] }}"> {{ p[0] }} </a>
-                    </li>
                     {% if p[0] == "Research" %}
                       <li>
                         <a class="page-scroll" href="/research"> {{ p[0] }} </a>
@@ -39,6 +36,10 @@
                       {% elsif p[0] == "Teaching" %}
                       <li>
                         <a class="page-scroll" href="/teaching"> {{ p[0] }} </a>
+                      </li>
+                      {% else%}
+                      <li>
+                        <a class="page-scroll" href="#{{ p[1] }}"> {{ p[0] }} </a>
                       </li>
                   {% endfor %}
 
