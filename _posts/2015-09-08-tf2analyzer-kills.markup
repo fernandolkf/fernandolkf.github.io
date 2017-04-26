@@ -1,0 +1,23 @@
+---
+layout: post
+section-type: post
+title: "TF2 Log Analyzer: The Kills"
+category: projects
+tags: [ 'tf2log' ]
+---
+
+Ok, so I started to work on the parser in the last days. As the log entries have several formats depending of the action, this proved to be a boring and long task to do. In the end, to save some time and to have some fun with the log data, I manage to easly build a simple parser to get all the kills in the log. Each kill entry have this format:
+
+<small>L day - timestamp: Attacker<%><%UserID%><%UserGroup%> killed Target<%><%UserID%><%UserTeam%> with "weapon"  (attacker_position "x y z") (victim_position "x y z")(</small>
+
+As I didn't found the log documentation, I'm not 100% certain of the coordinates format of the positions. I assumed that is a 3D point with x, y and z coordinates. Well, this make things easy. The first step was to extract the date from each entry. As time and date are universal constants, I simple used the Pattern java class and created a simple pattern for the date and for the time. As the log data is reliable, I don't need to check if the date or time is correct.
+
+<small>Pattern datePattern = Pattern.compile("\\b[0-9]{2}/[0-9]{2}/[0-9]{4}\\b");
+	 Pattern timePattern = Pattern.compile("\\b[0-9]{2}:[0-9]{2}:[0-9]{2}\\b");</small>
+
+Now, for extract the rest of the information was a mess. Each action has a different format, so the right thing to do is check what is the action and create a parser for each one. The other problem is that the player name can be anything, from space to special characters. The only constant is that is between quotation marks and is foollowed by the user id and team. So I will have to create a special parser for this. The kill action is identified as "killed", followed by the target (that has the same problem as the player). 
+
+<pre><code class="java">
+Pattern datePattern = Pattern.compile("\\b[0-9]{2}/[0-9]{2}/[0-9]{4}\\b");
+Pattern timePattern = Pattern.compile("\\b[0-9]{2}:[0-9]{2}:[0-9]{2}\\b");
+</code></pre>

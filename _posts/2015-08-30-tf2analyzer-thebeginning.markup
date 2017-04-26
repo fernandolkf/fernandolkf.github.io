@@ -12,7 +12,7 @@ I’m not worried about performance so java is fine. It have an enormous library
 
 The log is a txt file with thousands lines registering all the events of the match. Each different event has a different structure, so it is boring as hell to organize it. The pattern follow like this:
 
-<small>L day - timestamp: ActorOfEvent<%><%UserID%><%UserGroup%> EventDescription</small>
+<small>L day - timestamp: ActorOfEvent<%><%UserID%><%UserTeam%> EventDescription</small>
 
 The main problem is that the EventDescription can be something simple like the user connection or more complex like picked an item, killed an enemy or capture an objective. So the parser should handle all the possible events.
 

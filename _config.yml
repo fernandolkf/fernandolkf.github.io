@@ -3,7 +3,7 @@
 url: "http://fernandolkf.github.io"
 title: "{Fernando de Lucca Siqueira}"
 description: "Personal blog and website of Fernando de Lucca Siqueira."
-keywords: "fernandolkf, fernando, de lucca, siqueira, computer science, moving objects trajectory, mobile robots, gaming, fenixdown"
+keywords: "fernandolkf, fernando, de lucca, siqueira, computer science, moving objects trajectory, mobile robots, gaming"
 favicon: "/img/favicon.ico"
 black-favicon: "/img/black-lab-glass.ico"
 google-tracking-id: "UA-66906058-1"
@@ -39,6 +39,12 @@ reddit-share: True
 # Career variables
 
 events:
+- image: "/img/career/logo_usj.jpg"
+    date: "August 2016 - Current"
+    description: "Substitute Teacher @ <a href=\"http://www.ufsc.br\" target=\"_blank\">Systems Analysis and Development</a>, Centro Universitário Municipal de São José"
+- image: "/img/career/logo_senac.png"
+    date: "February 2016 - Current"
+    description: "Teacher @ <a href=\"http://portal.sc.senac.br\" target=\"_blank\">Systems Analysis and Development</a>, Senac Santa Catarina"
   - image: "/img/career/logo_ufsc_pgeas.png"
     date: "September 2015 - July 2016"
     description: "Substitute Teacher @ <a href=\"http://www.ufsc.br\" target=\"_blank\">Department of Systems Engineering and Automation</a>, Universidade Federal de Santa Catarina"
