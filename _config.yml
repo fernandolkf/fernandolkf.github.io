@@ -18,6 +18,10 @@ pages_list:
   Career: 'career'
   Blog: 'blog'
   Contact: 'contact'
+  Research: 'research'
+  Projects: 'projects'
+  Teaching: 'teaching'
+
 
 background-img: "/img/intro-bg.png"
 
