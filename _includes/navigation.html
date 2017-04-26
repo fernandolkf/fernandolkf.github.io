@@ -42,6 +42,18 @@
                       <li>
                         <a class="page-scroll" href="/blog/index.html"> {{ p[0] }} </a>
                       </li>
+                      {% elsif p[0] == "Research" %}
+                      <li>
+                        <a class="page-scroll" href="/research"> {{ p[0] }} </a>
+                      </li>
+                      {% elsif p[0] == "Projects" %}
+                      <li>
+                        <a class="page-scroll" href="/projects"> {{ p[0] }} </a>
+                      </li>
+                      {% elsif p[0] == "Teaching" %}
+                      <li>
+                        <a class="page-scroll" href="/teaching"> {{ p[0] }} </a>
+                      </li>
                     {% else %}
                       <li>
                         <a class="page-scroll" href="/index.html#{{ p[1] }}"> {{ p[0] }} </a>
@@ -50,13 +62,6 @@
                   {% endfor %}
 
                 {% endif %}
-
-                                <li>
-                  <a href="/research">Research</a>
-                </li>
-                <li>
-                  <a href="/projects">Projects</a>
-                </li>
 
             </ul>
         </div>
