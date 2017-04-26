@@ -28,6 +28,18 @@
                     <li>
                       <a class="page-scroll" href="#{{ p[1] }}"> {{ p[0] }} </a>
                     </li>
+                    {% if p[0] == "Research" %}
+                      <li>
+                        <a class="page-scroll" href="/research"> {{ p[0] }} </a>
+                      </li>
+                      {% elsif p[0] == "Projects" %}
+                      <li>
+                        <a class="page-scroll" href="/projects"> {{ p[0] }} </a>
+                      </li>
+                      {% elsif p[0] == "Teaching" %}
+                      <li>
+                        <a class="page-scroll" href="/teaching"> {{ p[0] }} </a>
+                      </li>
                   {% endfor %}
 
                 {% else %}
