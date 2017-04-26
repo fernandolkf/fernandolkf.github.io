@@ -39,10 +39,10 @@ reddit-share: True
 # Career variables
 
 events:
-- image: "/img/career/logo_usj.png"
+  - image: "/img/career/logo_usj.png"
     date: "August 2016 - Current"
     description: "Substitute Teacher @ <a href=\"http://usj.edu.br\" target=\"_blank\">Systems Analysis and Development</a>, Centro Universitário Municipal de São José"
-- image: "/img/career/logo_senac.png"
+  - image: "/img/career/logo_senac.png"
     date: "February 2016 - Current"
     description: "Teacher @ <a href=\"http://portal.sc.senac.br\" target=\"_blank\">Systems Analysis and Development</a>, Senac Santa Catarina"
   - image: "/img/career/logo_ufsc_pgeas.png"
