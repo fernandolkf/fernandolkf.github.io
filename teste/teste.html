@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <!-- Load Google Maps API. -->
+    
+    
+  
+    
+    function initialize() {
+      var heatmapData = [
+        {location: new google.maps.LatLng(37.09024, -95.712891), weight: 3430},
+        {location: new google.maps.LatLng(40.463667, -3.74922), weight: 577},
+        {location: new google.maps.LatLng(55.378051, -3.435973), weight: 352},
+        {location: new google.maps.LatLng(31.046051, 34.851612), weight: 292},
+        {location: new google.maps.LatLng(47.516231, 14.550072), weight: 196},
+        {location: new google.maps.LatLng(-38.416097, -63.616672), weight: 151},
+        {location: new google.maps.LatLng(20.593684, 78.96288), weight: 133},
+        {location: new google.maps.LatLng(1.352083, 103.819836), weight: 66},
+      ];
+       
+      // Add some custom styles to your google map. This can be a pain. 
+        // http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+      var styles = [ 
+        {
+          "featureType": "administrative",
+          "stylers": [
+            { "visibility": "off" }
+          ]
+        },
+        {
+          "featureType": "road",
+          stylers: [ 
+            { "visibility": "off"}
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#ffffff" },
+            { "visibility": "on" }
+          ]
+        },
+      ];
+      // create a point on the map for the Atlantic Ocean, 
+      // which will later be used for centering the map.
+      var atlanticOcean = new google.maps.LatLng(24.7674044, -38.2680446);
+      // Create the styled map object.
+      var styledMap = new google.maps.StyledMapType(styles, {name:"Styled Map"});
+      // create the base map object. put it in the map-canvas id, defined in HTML below.
+      map = new google.maps.Map(document.getElementById('map-canvas'), {
+        center: atlanticOcean, // set the starting center point as the atlantic ocean
+        zoom: 3, // set the starting zoom 
+        mapTypeControlOptions: {
+          mapTypeIds: [ google.maps.MapTypeId.ROADMAP, 'map_style'] // give the map a type.
+        }, 
+      });
+       
+      // Create the heatmap object.
+      var heatmap = new google.maps.visualization.HeatmapLayer({
+        data: heatmapData, // pass in your heatmap data to plot in this layer.
+        opacity: 1, 
+        dissipating: false, // on zoom, do you want dissipation?
+      });
+      heatmap.setMap(map); // apply the heatmap to the base map object.
+      map.mapTypes.set('map_style', styledMap); // apply the styles to your base map.
+      map.setMapTypeId('map_style'); 
+       
+      // Add a custom Legend to Your Map
+        // https://developers.google.com/maps/tutorials/customizing/adding-a-legend
+      var legend = document.getElementById('legend');
+      map.controls[google.maps.ControlPosition.RIGHT_BOTTOM]
+         .push(document.getElementById('legend'));
+       
+      // This is hard-coded for the countries I knew existed in the set.
+      var country_list = ['USA','Spain','United_Kingdom','Israel',
+                          'Austria','Argentina','India','Singapore'];
+       
+      // for each country in the country list, append it to the Legend div.
+
+      for (i = 0; i < country_list.length; i++) {
+          var div = document.createElement('div');
+          div.innerHTML = '<p>' + country_list[i] + '</p>'
+          legend.appendChild(div);
+      } 
+    }
+
+     google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+</head>
+
+<body>
+    <'div id="legend" style="background-color:grey;padding:10px;">
+    <strong>Countries Mapped</strong>
+    </div>
+
+    <'div id="map-canvas"></div>
+    </body>
+</html>
